@@ -42,7 +42,7 @@ class TypeController extends Controller
                 "name" => $type->name,
                 "first_year" => $type->first_year,
                 "last_year" => $type->last_year,
-                "brand" => $type->brand_id // Cambia 'brand' por 'brand_id' si solo necesitas el ID de la marca
+                "brand_id" => $type->brand_id // Cambia 'brand' por 'brand_id' si solo necesitas el ID de la marca
             ];
             array_push($list, $object);
         }
