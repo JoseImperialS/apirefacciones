@@ -33,7 +33,7 @@ class TypeController extends Controller
     
 
     public function typesForBrand($brandId) {
-        $types = Type::where('brand_id', $brandId)->get();
+        $types = Type::where('brand_id', $brandId)->all(); 
     
         $list = [];
         foreach ($types as $type) {
