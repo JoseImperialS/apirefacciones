@@ -72,7 +72,7 @@ Route::get('/users/{id}', [UserController::class, 'item']);
 Route::post('/users/create',[UserController::class, 'create']);
 Route::get('/types/{id}/brands', [TypeController::class, 'typesForBrand']);
 Route::post('/login', [AuthController::class,'login']);
-Route::get('/types/{id}/brands', [TypeController::class, 'typesForBrand']);
+Route::post('/types/{id}/brands', [TypeController::class, 'typesForBrand']);
 Route::get('/parts/{id}/types', [PartController::class, 'partsFortypes']);
 
 Route::delete('/brands/{id}', [BrandController::class, 'delete']);
